@@ -11,7 +11,12 @@ public class Post {
     private Long writerId;
     private String content;
 
-    public void setWriterId(Long writerId) {
+    public Post() {
+    }
+
+    public Post(String title, Long writerId, String content) {
+        this.title = title;
         this.writerId = writerId;
+        this.content = content;
     }
 }
